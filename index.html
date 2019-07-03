@@ -40,12 +40,7 @@ layout: default
 
 </br>
 
-<!-- <figure>
-<img class="img-responsive" style="dipslay:block;margin-left:auto;margin-right:auto;height:60%" src="{{site.baseurl}}/assets/images/domain-adaptation.png"/>
-</figure>
-<p></br><strong>Caption:</strong> An example of a domain adaptation problem from the <a href="http://ai.bu.edu/visda-2017">VisDA2017</a> domain adaptation challenge: object classification with a synthetic source (train) domain and a real target (test) domain. Unsupervised Domain Adaptation methods aim to use labeled samples from the train domain and large volumes of unlabeled samples from the test domain to reduce prediction errors on the test domain. </p>
-</br>
- -->
+
 
 <p> The competition will take place during the months of June -- September 2019, and the top performing teams will be invited to present their results at the workshop at <a href="https://eccv2018.org/">ICCV 2019</a> in Seoul, South Korea. This year’s challenge includes two tracks: </p>
 
@@ -61,95 +56,7 @@ layout: default
 <img class="img-responsive" style="dipslay:block;margin-left:auto;margin-right:auto" src="http://ai.bu.edu/M3SDA/imgs/statistics.png"/>
 </figure>
 
-<!--
-<a name = "classification"></a>
-<h3 class="section-title"> Open-Set Classification Track </h2>
-<p>Last year’s challenge featured a closed-set classification task for synthetic-to-real adaptation, where all object categories were known ahead of time. The top performing teams in this track developed CNN models that achieved impressive adaptation <a href = "http://ai.bu.edu/visda-2017/#winners">results</a>. This year, we push the boundaries beyond closed-set classification and propose a novel open-set classification task. In this track, the goal is to develop a method of unsupervised domain adaptation for object classification, where the target domains contain images of additional unknown categories not present in the source dataset.</p>
 
-</br>
-<figure>
-<img class="img-responsive" style="dipslay:block;margin-left:auto;margin-right:auto;height:60%" src="{{site.baseurl}}/assets/images/openset.png"/>
-</figure>
-</br></br>
-
-<a name = "detection"></a>
-<h3 class="section-title"> Detection Track </h2>
-<p>In this track, the goal is to develop a model that can adapt between synthetic and real objects for recognition/detection. This task entails localizing an object from each of 12 learned categories in novel images by predicting its class and its bounding box. </p>
-
-</br>
-<figure>
-<img class="img-responsive" style="dipslay:block;margin-left:auto;margin-right:auto;height:60%" src="{{site.baseurl}}/assets/images/detection.png"/>
-</figure>
-</br></br>
-
-<p>Both tracks feature the same datasets and focus on synthetic-to-real domain adaptation. Participants will be given three datasets, each containing the same object categories:</p>
-  <ul>
-    <li> <b> training domain (source)</b>: synthetic 2D renderings of 3D models generated from different angles and with different lighting conditions </li>
-    <li> <b> validation domain (target)</b>: a photo-realistic or real-image validation domain that participants can use to evaluate performance of their domain adaptation methods </li>
-    <li> <b> test domain (target)</b>: a new real-image test domain, <b> different from the validation domain and without labels </b>. The test set will be released shortly before the end of the competition </li>
-  </ul>
-<p> The reason for using different target domains for validation and test is to evaluate the performance of proposed models as an out-of-the-box domain adaptation tool. This setting more closely mimics realistic deployment scenarios where the target domain is unknown at training time and discourages algorithms that are designed to handle a particular target domain. </p>
-
-</br>
-
-
-<a name = "data"></a>
-<h2 class="section-title"> Data </h2>
-<p>We use a recent <a href="http://ai.bu.edu/syn2real/index.html">Syn2Real</a> dataset collected by our team. Please follow the instructions outlined in the <a href = "https://github.com/VisionLearningGroup/visda-2018-public">VisDA GitHub repository</a> to download data and development kits for the classification and segmentation tracks. Training and validation data are now available to download. We have also included baseline models and instructions on training several existing domain adaptation methods.</p>
-
-</br>
-
-<a name = "prizes"></a>
-<h2 class="section-title"> Prizes </h2>
-
-<p> We are excited to announce NVIDIA GPU prizes for the top performing teams! The top 3 winners of both the openset and detection tracks will receive:</p>
-<ul>
-    <li><b>1st place:</b> Titan Xp</li>
-    <li><b>2nd place:</b> GTX 1080 Ti</li>
-    <li><b>3rd place:</b>  GTX 1060 6GB</li>
-</ul>
-
-</br>
-
-<a name = "browse"></a>
-<h2 class="section-title"> Browse Data </h2>
-<p > If you would like to browse sample images from each of the datasets currently available please use the links below: </p>
-<br>
-
-<p> Classification challenge: </p>
-<ul>
-    <li><a href="pages/classification_train/aeroplane.html">training domain</a></li>
-    <li><a href="pages/classification_validation/aeroplane.html">validation domain</a></li>
-</ul>
-<p> Segmentation challenge: </p>
-<ul>
-    <li><a href = "pages/segmentation_train/segmentation_train.html">training domain</a></li>
-    <li><a href = "pages/segmentation_validation/segmentation_validation.html">validation domain</a></li>
-</ul>
-
-
-</br>
-
-
-<a name = "download"></a>
-<h2 class="section-title"> Download </h2>
-<p>Please follow the instructions outlined in the <a href = "https://github.com/VisionLearningGroup/taskcv-2017-public">VisDA GitHub repository</a> to download data and development kits for the classification and segmentation tracks. Training, validation and testing data are now available to download. We have also included baseline models and instructions on training several existing domain adaptation methods.</p>
-
-<p>The DevKits are currently in beta-release. If you find any bugs, please open an issue in our GitHub repo rather than emailing the organizers directly.</p>
-
-<p> You can get the <b><a href="https://arxiv.org/abs/1710.06924">tech report</a></b> describing dataset and baseline experiments from
-	<b><a href="https://arxiv.org/abs/1710.06924">arxiv</a></b>. If you use data, code or its derivatives, please consider citing:
-</p>
-
-<pre style="overflow: auto; word-wrap: normal; white-space: pre;"><code>@misc{visda2017,
-    Author = {Xingchao Peng and Ben Usman and Neela Kaushik and Judy Hoffman and Dequan Wang and Kate Saenko},
-    Title = {VisDA: The Visual Domain Adaptation Challenge},
-    Year = {2017},
-    Eprint = {arXiv:1710.06924},
-}</code></pre>
-
-
--->
 </br>
 </br>
 
@@ -206,21 +113,10 @@ layout: default
 <p><b> Yes! </b> The top performing teams are required to include a four+ page write-up regarding their methods and code to reproduce their results to the claim the victory. The detailed procedure for releasing the code is to be determined. </p>
 
 <li><b>Do participants need to adhere to TASK-CV abstract submission deadlines to participate in the challenge?</b></li>
-<p>Submission of a <a href = "https://sites.google.com/view/task-cv2018/home">TASK-CV</a> workshop abstract is not mandatory to participate in the challenge; however, we request that any teams that wish to be considered for prizes or receive invitation to speak at the workshop submit a 4-page abstract. The top-performing teams that submit abstracts will be invited to present their approaches at the workshop. </p>
+<p>Submission of a <a href = "https://sites.google.com/view/task-cv2019">TASK-CV</a> workshop abstract is not mandatory to participate in the challenge; however, we request that any teams that wish to be considered for prizes or receive invitation to speak at the workshop submit a 4-page abstract. The top-performing teams that submit abstracts will be invited to present their approaches at the workshop. </p>
 
 </br>
-<!--
-<a name = "workshop"></a>
-<h2 class="section-title"> Workshop </h2>
-<p>The challenge is associated with the 5th annual <a href="https://sites.google.com/view/task-cv2018/home">TASK-CV</a> workshop,
-	being held at <a href = "http://iccv2017.thecvf.com/"> ECCV 2018</a> in Munich, Germany. Challenge participants are
-	encouraged to submit abstracts to the main TASK-CV workshop. In order to be considered for any challenge prizes,
-	as well as recieve an invitivation to give a talk about their results at the special VISDA session of the workshop,
-	participants are requested to submit a 2-page abstract directly via email to visda-organizers@googlegroups.com,
-	within 1 week of the challenge end.
-	</p>
-<hr>
--->
+
 
 </br>
 
@@ -235,23 +131,7 @@ Kuniaki Saito (Boston University),
 Ping Hu (Boston University),
 
 </br>
-<!--
-</br>
 
-<a name = "sponsors"></a>
-<h2 class="section-title"> Sponsors </h2>
-<img src="{{site.baseurl}}/assets/images/nsf_logo.png" style="float: left; width: 20%; margin-right: 5%; margin-bottom: 0.5em;">
-
-<img src="{{site.baseurl}}/assets/images/Nexar-Logo.jpg" style="float: left; width: 40%; margin-right: 5%; margin-bottom: 0.5em;">
-
-<p style="clear: both;">
-
-</br></br></br>
-<h2 class="section-title"> References </h2>
-[1] FCNs in the Wild: Pixel-level Adversarial and Constraint-based Adaptation, Judy Hoffman, Dequan Wang, Fisher Yu, Trevor Darrell
-
-</br></br>
--->
 
 <div height=1000px> </div>
 
