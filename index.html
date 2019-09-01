@@ -102,6 +102,14 @@ layout: default
 <h2 class="section-title"> FAQ </h2>
 
 <ol>
+<li><b>What's the training setting for unsupervised multi-source domain adaptation?</b></li>	
+<p>Ideally, you should train two <b>identical</b> models with the same <b>strategy/approach/hyperparameter</b> on following settings:</p>
+<p>Model I: Train on labeled images in sketch_train.txt (#49,115) /real_train.txt (#122,563) /quickdraw_train.txt (#120,750) /infograph_train.txt (#37,087) +  unlabeled images in clipart_train.txt  (#34,019), Test on unlabeled  images in clipart_test.txt  (#14,818). </p>
+<p>Model II: Train on labeled images in sketch_train.txt (#49,115) /real_train.txt (#122,563) /quickdraw_train.txt (#120,750) /infograph_train.txt (#37,087) +  unlabeled images in painting_train.txt (#52,867), Test on unlabeled images in painting_test.txt (#22,892). </p>
+
+<p>The submission file should contain the predictions of model I on 14,818 testing images and the predictions of model II on 22,892 testing images. The final ranking will be determined by how many correct predictions do the submission file have within the (14,818+22,892) images. 
+One  submission example can be found with the following link: <a href="https://github.com/VisionLearningGroup/visda-2019-public/blob/master/multisource/submission_example/result.txt"> submission_example.txt </a></p>
+	
 <li><b>Can we train models on data other than the source domain?</b></li>
 <p> Participants may elect to pre-train their models only on ImageNet. Please refer to the challenge evaluation instructions found in the <a href = "https://github.com/VisionLearningGroup/visda-2019-public">DevKit</a> for more details. </p>
 
