@@ -85,9 +85,9 @@ layout: default
 
 <p>The VisDA challenge tests adaptation and model transfer, so the rules are different than most challenges. Please read them carefully.</p>
 
-<p><b>Supervised Training:</b> Teams may only submit test results of models trained on the source domain data. Training on the validation dataset is not allowed for test submissions. To ensure equal comparison, we also do not allow any other external training data, modifying the provided training dataset, or any form of manual data labeling. </p>
+<p><b>Supervised Training:</b> Teams may only submit test results of models trained on the source domain data. To ensure equal comparison, we also do not allow any other external training data, modifying the provided training dataset, or any form of manual data labeling. </p>
 
-<p><b>Unsupervised training:</b> Models can be adapted (trained) on the test data in an unsupervised way, i.e. without labels. Adaptation, even unsupervised, on the validation data is not allowed for test submissions.  Note, we have released the validation labels to facilitate algorithm development. </p>
+<p><b>Unsupervised training:</b> Models can be adapted (trained) on the test data in an unsupervised way, i.e. without labels.  </p>
 
 <p><b>Source Models:</b> The performance of a domain adaptation algorithm greatly depends on the baseline performance of the model trained only on source data. We ask that teams submit two sets of results: 1) predictions obtained only with the source-trained model, and 2) predictions obtained with the adapted model. See the development kit for submission formatting details. </p>
 
@@ -102,14 +102,14 @@ layout: default
 <h2 class="section-title"> FAQ </h2>
 
 <ol>
-<li><b>What's the training setting for unsupervised multi-source domain adaptation?</b></li>	
+<li><b>What's the training setting for unsupervised multi-source domain adaptation?</b></li>
 <p>Ideally, you should train two <b>identical</b> models with the same <b>strategy/approach/hyperparameter</b> on following settings:</p>
 <p>Model I: Train on labeled images in sketch_train.txt (#49,115) /real_train.txt (#122,563) /quickdraw_train.txt (#120,750) /infograph_train.txt (#37,087) +  unlabeled images in clipart_train.txt  (#34,019), Test on unlabeled  images in clipart_test.txt  (#14,818). </p>
 <p>Model II: Train on labeled images in sketch_train.txt (#49,115) /real_train.txt (#122,563) /quickdraw_train.txt (#120,750) /infograph_train.txt (#37,087) +  unlabeled images in painting_train.txt (#52,867), Test on unlabeled images in painting_test.txt (#22,892). </p>
 
-<p>The submission file should contain the predictions of model I on 14,818 testing images and the predictions of model II on 22,892 testing images. The final ranking will be determined by how many correct predictions do the submission file have within the (14,818+22,892) images. 
+<p>The submission file should contain the predictions of model I on 14,818 testing images and the predictions of model II on 22,892 testing images. The final ranking will be determined by how many correct predictions do the submission file have within the (14,818+22,892) images.
 One  submission example can be found with the following link: <a href="https://github.com/VisionLearningGroup/visda-2019-public/blob/master/multisource/submission_example/result.txt"> submission_example.txt </a></p>
-	
+
 <li><b>Can we train models on data other than the source domain?</b></li>
 <p> Participants may elect to pre-train their models only on ImageNet. Please refer to the challenge evaluation instructions found in the <a href = "https://github.com/VisionLearningGroup/visda-2019-public">DevKit</a> for more details. </p>
 
@@ -129,7 +129,7 @@ One  submission example can be found with the following link: <a href="https://g
 <p>Yes, so long as each team is comprised of different members.</p>
 
 <li><b>Can external data be used?</b></li>
-<p>The allowed training data consists of the VisDA 2019 Training set. The VisDA 2019 Validation set can be used to test adaptation to a target domain offline, but cannot be used to train the final submitted model (with or without labels). Optional initialization of models with weights pre-trained on ImageNet is allowed and must be declared in the submission. Please see the <a href = "#rules">challenge rules</a> for more details. </p>
+<p>The allowed training data consists of the VisDA 2019 Training set. Optional initialization of models with weights pre-trained on ImageNet is allowed and must be declared in the submission. Please see the <a href = "#rules">challenge rules</a> for more details. </p>
 
 <li><b>Are challenge participants required to reveal all details of their methods?</b></li>
 <p><b> Yes! </b> The top performing teams are required to include a four+ page write-up regarding their methods and code to reproduce their results to the claim the victory. The detailed procedure for releasing the code is to be determined. </p>
